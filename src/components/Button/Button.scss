@@ -1,0 +1,70 @@
+.button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  color: var(--primary);
+  border-radius: 2px;
+  text-transform: capitalize;
+  transition-property: background-color, color;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border: 2px solid transparent;
+  &.primary {
+    color: var(--white);
+    background-color: var(--primary);
+    &:hover {
+      background-color: var(--primary--hover);
+    }
+    &:active {
+      background-color: var(--primary--pressed);
+    }
+  }
+  &.secondary {
+    color: var(--primary);
+    background-color: var(--white);
+    border-color: var(--primary);
+    &:hover {
+      color: var(--secondary_text--hover);
+      background-color: var(--secondary_bg--hover);
+    }
+    &:active {
+      color: var(--white);
+      background-color: var(--secondary_bg--pressed);
+    }
+  }
+  &.link {
+    text-decoration: none;
+    color: var(--primary);
+
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active,
+    &:target {
+      color: var(--link--pressed);
+    }
+  }
+  &.icon {
+    --icon-size: 32px;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    color: var(--black);
+    &:hover {
+      background-color: var(--secondary_bg--hover);
+    }
+  }
+  &.ghost {
+    &:hover {
+      color: var(--secondary_text--hover);
+      background-color: var(--secondary_bg--hover);
+    }
+    &:active {
+      color: var(--white);
+      background-color: var(--secondary_bg--pressed);
+    }
+  }
+}
