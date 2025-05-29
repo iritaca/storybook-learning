@@ -16,7 +16,8 @@
   &.primary {
     color: var(--white);
     background-color: var(--primary);
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--primary--hover);
     }
     &:active {
@@ -27,7 +28,8 @@
     color: var(--primary);
     background-color: var(--white);
     border-color: var(--primary);
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--secondary_text--hover);
       background-color: var(--secondary_bg--hover);
     }
@@ -40,7 +42,8 @@
     text-decoration: none;
     color: var(--primary);
 
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration: underline;
     }
     &:active,
@@ -53,12 +56,14 @@
     width: var(--icon-size);
     height: var(--icon-size);
     color: var(--black);
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--secondary_bg--hover);
     }
   }
   &.ghost {
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--secondary_text--hover);
       background-color: var(--secondary_bg--hover);
     }
