@@ -4,7 +4,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 Storybook for UI development, and basic testing support.
 
 #### Why this template?
-Setting up Storybook from scratch can be time-consuming - this template helps you skip the version mismatches and boilerplate, so you can focus on solving real problems.
+Setting up Storybook from scratch can be time-consuming - this template helps you skip the version mismatches, so you can focus on solving real problems.
 
 As developers, we should spend more time building things that matter - not wrestling with setup or compatibility issues. :smile:
 
