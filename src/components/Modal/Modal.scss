@@ -1,0 +1,39 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  color: var(--black);
+
+  padding: 32px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-gap: 32px;
+  max-height: 50vh;
+}
+.modal-header {
+  text-align: left;
+}
+.modal-button-close {
+  --close-button-position: 16px;
+  position: absolute;
+  right: var(--close-button-position);
+  top: var(--close-button-position);
+}
+.modal-body {
+  text-align: left;
+  overflow: auto;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  & > * + * {
+    margin-left: 16px;
+  }
+}
+
+.modal-button-cancel {
+  margin-right: auto;
+}
