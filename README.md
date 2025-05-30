@@ -24,3 +24,15 @@ Launch vite development server to view and test components like the button and m
 ### Storybook
 Run storybook to develop and explore UI components in isolation
 > yarn storybook
+
+Explored Topics
+| Step | Topic           | Goal                          | Component Focus    |
+| ---- | --------------- | ----------------------------- | ------------------ |
+| ✅ 1  | Setup Review    | Verify config + structure     | Button / Modal     |
+| ✅ 2 | CSF Mastery     | Deep dive into stories        | Button             |
+| ✅ 3 | Args + Controls | Dynamic props UI              | Button             |
+| ✅ 4 | Decorators      | Themes, layout, wrappers      | Modal              |
+| ✅ 5 | Addons          | Interactivity & a11y          | Both               |
+| ✅ 6 | Docs & MDX      | Beautiful docs for dev/design | Button             |
+| 🔄 7 | Testing         | Visual and interaction tests  | Modal              |
+| 🔄 8 | Deployment      | Shareable UI system           | Your whole library |
