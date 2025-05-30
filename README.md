@@ -25,7 +25,8 @@ Launch vite development server to view and test components like the button and m
 Run storybook to develop and explore UI components in isolation
 > yarn storybook
 
-Explored Topics
+---
+### Explored Topics
 | Step | Topic           | Goal                          | Component Focus    |
 | ---- | --------------- | ----------------------------- | ------------------ |
 | ✅ 1  | Setup Review    | Verify config + structure     | Button / Modal     |
