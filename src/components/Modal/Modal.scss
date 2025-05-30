@@ -1,3 +1,9 @@
+// storybook has no access to root for now the button colors will be here
+.modal {
+  --white: #ededed;
+  /* Modal Header and body Text*/
+  --black: #000;
+}
 .modal {
   position: fixed;
   top: 50%;
@@ -11,6 +17,7 @@
   grid-template-rows: min-content 1fr min-content;
   grid-gap: 32px;
   max-height: 50vh;
+  width: 400px;
 }
 .modal-header {
   text-align: left;
