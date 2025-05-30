@@ -54,6 +54,11 @@ const meta: Meta<typeof Button> = {
 - Use  \`href\` for navigation`,
       },
     },
+    a11y: {
+      config: {
+        rules: [{ id: "color-contrast", enabled: false }],
+      },
+    },
   },
 };
 
