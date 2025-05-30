@@ -1,3 +1,20 @@
+// storybook has no access to root for now the button colors will be here
+.button {
+  --white: #fff;
+  /* Modal Header and body Text*/
+  --black: #000;
+  /*link, primary background*/
+  --primary: #4a86e8;
+  --primary--hover: #1155cc;
+  /* active is standard, but by following the guide it is called "pressed" */
+  --primary--pressed: #1c4587;
+
+  --link--presed: #1155cc;
+  --secondary_text--hover: #1155cc;
+  --secondary_bg--hover: #e9effb;
+  --secondary_text--pressed: #fff;
+  --secondary_bg--pressed: #4a86e8;
+}
 .button {
   border: 0;
   outline: 0;
@@ -11,8 +28,10 @@
   text-transform: capitalize;
   transition-property: background-color, color;
   transition: 0.3s ease-in-out;
-  cursor: pointer;
   border: 2px solid transparent;
+  &:hover {
+    cursor: pointer;
+  }
   &.primary {
     color: var(--white);
     background-color: var(--primary);
@@ -39,8 +58,10 @@
     }
   }
   &.link {
+    width: auto;
     text-decoration: none;
     color: var(--primary);
+    justify-self: flex-start;
 
     &:hover,
     &:focus {
