@@ -20,11 +20,11 @@ const meta: Meta<typeof Modal> = {
         onSecondary: fn(),
         oncancel: fn(),
       },
-      open: true,
     },
   },
   argTypes: {
     "buttons.variant": {
+      // @TOD: Need to find a way to enable correctly this property and make it work on storybook UI.
       control: "select",
       options: [undefined, "multiple"],
       mapping: {
@@ -40,12 +40,6 @@ const meta: Meta<typeof Modal> = {
     children: {
       control: false,
     },
-    // disables a prop
-    // internalProp: {
-    //   table: {
-    //     disable: true,
-    //   },
-    // },
   },
   parameters: {
     docs: {

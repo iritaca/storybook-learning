@@ -1,8 +1,6 @@
-# This pack contains 2 main component, coded by Isaac Rios
+# Sotrybook Learning
 
-Welcome user this is a project containing 2 main components:
-- button
-- modal : initially starts with a button that can be clicked and hides while the modal is open.
+This repository tracks my ongoing learning journey with Storybook. It's my first formal approach to using Storybook for isolated UI component development and documentation.
 
 
 ## Features
@@ -14,14 +12,14 @@ Welcome user this is a project containing 2 main components:
 
 ## Getting started
 ### Install dependencies
-You want to install the dependencies and you can do that with
+Install the requiered packages
 > yarn install
 
 
 ### Run development Server
-This is for Running the development server which contains the button and a modal
+Launch vite development server to view and test components like the button and modal
 > yarn dev
 
 ### Storybook
-Start storybook, to isolate the components
+Run storybook to develop and explore UI components in isolation
 > yarn storybook
