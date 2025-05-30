@@ -1,6 +1,7 @@
-# Sotrybook Learning
+# Storybook Learning
 
-This repository tracks my ongoing learning journey with Storybook. It's my first formal approach to using Storybook for isolated UI component development and documentation.
+This repository tracks my ongoing learning journey with Storybook. 
+It's my first formal approach to using Storybook for isolated UI component development and documentation.
 
 
 ## Features
