@@ -1,4 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { userEvent, within } from "@storybook/test";
+import { action } from "@storybook/addon-actions";
 
 import Button from "./Button";
 
@@ -95,5 +97,18 @@ export const Ghost: Story = {
   args: {
     label: "Ghost",
     variant: "ghost",
+  },
+};
+export const ClickedButton: Story = {
+  args: {
+    label: "click me",
+    variant: "primary",
+    onClick: action("button-clicked"),
+  },
+  play: async ({ canvasElement }: { canvasElement: HTMLElement }) => {
+    const canvas = within(canvasElement);
+    const button = canvas.getByRole("button");
+    await userEvent.click(button);
+    console.log("Button was clicked");
   },
 };
