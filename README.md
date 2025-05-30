@@ -1,12 +1,9 @@
-# React + TypeScript + Vite + Storybook + Yarn
+# This pack contains 2 main component, coded by Isaac Rios
 
-This template provides a minimal setup to get React working in Vite with some ESLint rules,
-Storybook for UI development, and basic testing support.
+Welcome user this is a project containing 2 main components:
+- button
+- modal : initially starts with a button that can be clicked and hides while the modal is open.
 
-#### Why this template?
-Setting up Storybook from scratch can be time-consuming - this template helps you skip the version mismatches, so you can focus on solving real problems.
-
-As developers, we should spend more time building things that matter - not wrestling with setup or compatibility issues. :smile:
 
 ## Features
 - React with Typescript
@@ -14,14 +11,17 @@ As developers, we should spend more time building things that matter - not wrest
 - ESLint with support for type-checked and stylistic rules
 - Storybook for isolated component development and documentation
 
+
 ## Getting started
 ### Install dependencies
+You want to install the dependencies and you can do that with
 > yarn install
 
 
 ### Run development Server
+This is for Running the development server which contains the button and a modal
 > yarn dev
 
 ### Storybook
-Start storybook
+Start storybook, to isolate the components
 > yarn storybook
