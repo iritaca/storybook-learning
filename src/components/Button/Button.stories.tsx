@@ -1,22 +1,58 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { fn } from "@storybook/test";
 
 import Button from "./Button";
 
 const meta: Meta<typeof Button> = {
   title: "components/Button",
   component: Button,
+  tags: ["autodocs"], // this shows the documentation
   args: {
     label: "button",
     variant: "primary",
-    onClick: fn(),
-    href: "https://www.google.com",
+    onClick: "",
     className: "special",
   },
   argTypes: {
+    label: {
+      control: "text",
+      defaultValue: "click me",
+    },
     variant: {
       control: "select",
-      option: ["primary", "secondary", "link", "icon", "ghost"],
+      options: ["primary", "secondary", "link", "icon", "ghost"],
+    },
+    onClick: {
+      action: "clicked",
+      if: { arg: "variant", neq: "link" }, // hide onClick when using link variant
+    },
+    disabled: {
+      control: "boolean",
+      description:
+        "changes the look of the button to display the disabled state",
+    },
+    href: {
+      if: { arg: "variant", eq: "link" }, // shows href only if the variant is 'link'
+    },
+  },
+  parameters: {
+    docs: {
+      description: {
+        component: `The **Button** trigger actions on navigates to links.
+        It supports several multiple visual styles for different use cases:
+
+        ### Variants
+
+- \`primary\` : Main call to action
+- \`secondary\` : Secondary action
+- \`ghost\` : Low-emphasis alternative
+- \`link\` : Custom styled link; requires \`href\`
+- \`icon\` : For icon-only buttons (use with a single character or icon)
+
+### Behavior
+
+- Use \`onClick\` for actions
+- Use  \`href\` for navigation`,
+      },
     },
   },
 };
